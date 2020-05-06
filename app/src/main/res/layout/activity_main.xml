@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/colorSecondary">
+
+    <fragment
+        android:id="@+id/graph_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:name="com.example.prophetai.fragments.Graph"
+        tools:layout="@layout/fragment_graph" />
+
+    <fragment
+        android:id="@+id/data_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:name="com.example.prophetai.fragments.Data"
+        tools:layout="@layout/fragment_data" />
+
+</LinearLayout>
